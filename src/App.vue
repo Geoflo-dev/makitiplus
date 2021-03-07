@@ -160,10 +160,26 @@
                                           </div>
                                         </div>
                                     </div>
-                               <div class="column is-5 is-hidden-mobile">
-                                  <div class="button">
+                               <div class="column is-5 ">
 
-                                  </div>
+                                 <!-- carousel -->
+                                  <swiper :slides-per-view="1"
+                                      :space-between="50"
+                                      navigation
+                                      :pagination="{ clickable: true }"
+                                      :autoplay="{ delay: 2500, disableOnInteraction: false }"
+                                      :scrollbar="{ draggable: true }"
+                                      @swiper="onSwiper"
+                                      @slideChange="onSlideChange"
+                                    >
+                                      <swiper-slide class="box box-carousel">
+                                           
+                                      </swiper-slide>
+                                      <swiper-slide class="box ">Slide 2</swiper-slide>
+                                      <swiper-slide class="box">Slide 3</swiper-slide>
+                                      ...
+                                    </swiper>
+                                      
                                </div>
                         </div>
                       
@@ -179,14 +195,22 @@
                      <div class="column is-9">
                             <div class="top-annonce box">
                                    <div class="ligne-annonce">
-                                           <div class="box">
-                                                <h1> ligne 1 carousel 1</h1>
-                                           </div>
+                                      <swiper :slides-per-view="4" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
+                                        <swiper-slide>Slide 1</swiper-slide>
+                                        <swiper-slide>Slide 2</swiper-slide>
+                                        <swiper-slide>Slide 3</swiper-slide>
+                                        <swiper-slide>Slide 3</swiper-slide>
+                                        ...
+                                      </swiper>
                                      </div> 
                                      <div class="ligne-annonce">
-                                           <div class="box">
-                                                <h1> ligne 2 carousel 1</h1>
-                                           </div>
+                                          <swiper :slides-per-view="4" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
+                                        <swiper-slide>Slide 1</swiper-slide>
+                                        <swiper-slide>Slide 2</swiper-slide>
+                                        <swiper-slide>Slide 3</swiper-slide>
+                                        <swiper-slide>Slide 4</swiper-slide>
+                                        ...
+                                      </swiper>
                                      </div>     
                              </div>
                             <div class="top-annonce box">
@@ -222,9 +246,39 @@
   
 </template>
 <script>
-export default {
-  
-}
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/swiper.scss';
+  // import Swiper core and required modules
+  import SwiperCore, { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper';
+
+
+
+  // Import Swiper styles
+  import 'swiper/swiper.scss';
+  import 'swiper/components/navigation/navigation.scss';
+  import 'swiper/components/pagination/pagination.scss';
+  import 'swiper/components/scrollbar/scrollbar.scss';
+
+  // install Swiper modules
+  SwiperCore.use([Navigation, Pagination,Autoplay, Scrollbar, A11y]);
+
+  export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    methods: {
+      onSwiper(swiper) {
+        console.log(swiper);
+      },
+      onSlideChange() {
+        console.log('slide change');
+      },
+    },
+  };
 </script>
 
 <style lang="scss">
@@ -347,5 +401,10 @@ export default {
       background: linear-gradient(90deg, #F7E4AA 0%, #F6F3C1 100%), #FFFFFF;
       border-radius: 10px;
     }
-
+    .box-carousel{
+     
+      width: 599px;
+      height: 310px;
+      border-radius: 10px;
+    }
 </style>
