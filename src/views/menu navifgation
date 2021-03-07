@@ -1,0 +1,66 @@
+<!-- Menu de navigation -->
+        <div class=" container is-fluid nav-section py-3" >
+                 <nav class="navbar" role="navigation" aria-label="main navigation">
+                      <div class="navbar-brand elogo is-hidden-mobile" >
+                          <a class="navbar-item" href="https://bulma.io">
+                          <img :src="require('./assets/svg/makitisvg.svg')"/>
+                        </a>
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                          <span aria-hidden="true"></span>
+                          <span aria-hidden="true"></span>
+                          <span aria-hidden="true"></span>
+                        </a>
+                      </div>
+
+                     <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                           <div class="navbar-item">
+                               <div class="buttons">
+                                  <a class="button categories">
+                                  <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                  <p class="text">Catégories</p>
+                                  </a>
+                                </div>
+                           </div>
+                         </div>
+                        <!-- search menu -->
+                          <div class="navbar-item">
+                             <div class="rechercher">
+                                 <div class="columns is-gapless">
+                                    <div class="column">
+                                        <input  type="search" class=" search-input"  placeholder="Rechercher">
+                                    </div>
+                                    <div class="column my-2 mx-2">
+                                      <a class="btn-voice ">
+                                        <img :src="require('./assets/svg/mic.svg')"/>
+                                      </a>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- poster une annonce -->
+                          <div class="navbar-item">
+                              <div class="buttons">
+                                <a class=" button post-annonce">
+                                <img :src="require('./assets/svg/akar-icons_circle-plus.svg')"/>
+                                <p class="has-text-white">Poster une annonce</p>
+                                </a>
+                              </div>
+                          </div>
+                          <!-- fin poster une annonce -->
+                            <div class="navbar-end">
+                               <div class="navbar-item">
+                                  <div class="buttons">
+                                     <a class="button favoris">Favoris</a>
+                                     <a class="button is-light">
+                                      <img :src="require('./assets/svg/avatar.png')"/>
+                                     </a>
+                                   </div>
+                                </div>
+                             </div>
+                      </div>
+                  </nav>
+          </div>
+          

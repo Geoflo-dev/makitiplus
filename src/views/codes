@@ -1,0 +1,84 @@
+<!-- première rangée -->
+                                        <div class="columns is-mobile">
+                                             <div class="column">
+                                              <div class="categories-elements categorie-transport">
+                                                    <a style="display:flex">
+                                                        <img :src="require('./assets/svg/informatique.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                              <div class="categories-elements categorie-transport">
+                                                    <a style="display:flex">
+                                                        <img :src="require('./assets/svg/informatique.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                              <div class="categories-elements categorie-immo">
+                                                    <a style="display:flex">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                           
+                                         </div>
+                                         <!-- deuxieme rangée -->
+                                          <div class="columns is-mobile">
+                                            <div class="column">
+                                             <div class="categories-elements categorie-vetement">
+                                                    <a class="">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                              <div class="categories-elements categorie-aliment">
+                                                    <a class="" style="display:flex">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                            <div class="categories-elements categorie-electromenager">
+                                                    <a class="" style="display:flex">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                          
+                                         </div>
+                                         <!-- 3eme rangée -->
+                                          <div class="columns is-mobile">
+                                            <div class="column">
+                                              <div class="categories-elements categorie-emplois">
+                                                    <a class="" style="display:flex">
+                                                        <img class="mx-2" :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                              <div class="categories-elements categorie-services">
+                                                    <a class="" style="display:flex">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                            <div class="column">
+                                              <div class=" categories-elements categorie-divers">
+                                                    <a class="" style="display:flex">
+                                                        <img :src="require('./assets/svg/carbon_categories.svg')"/>
+                                                         <p class="text">Catégories</p>
+                                                    </a>
+                                              </div>
+                                            </div>
+                                           
+                                         </div>
